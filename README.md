@@ -21,4 +21,4 @@ Contributions are welcome If you have a feature request or bug report, please op
 
 For any inquiries or support, please reach out to <a href="https://github.com/iam-aydin">iam-aydin</a> or visit the project's GitHub page.
 
-<img width="512" src="./img/icon-512.png" />
+<img src="./img/icon-512.png" />
