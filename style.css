@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+/* General body styles */
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Content container styles */
+#content {
+  width: 100%;
+  max-width: 600px; /* Maximum width to prevent excessive scaling */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between elements */
+  padding: 20px;
+}
+
+/* Form and input field styles */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Button styles */
+.button {
+  width: 60px; /* Adjust based on screen size */
+  height: 60px;
+  font-size: 24px; /* Adjust based on screen size */
+  margin: 2px;
+  cursor: pointer;
+  background-color: #242424;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  box-sizing: border-box; /* Ensures padding does not affect sizing */
+}
+/* Base styles for the input field */
+.textview {
+  width: 100%; /* Ensures it takes full width of its container */
+  max-width: 270px; /* Prevents stretching beyond this width */
+  height: auto; /* Height adjusts based on content */
+  padding: 28px;
+  background-color: #0e0e0e;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 24px; /* Adjust based on screen size */
+  resize: vertical; /* Allows vertical resizing of the input field */
+  overflow: auto; /* Enables scrolling if the content exceeds the input field's height */
+  white-space: normal; /* Allows text to wrap */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  margin-bottom: 10px;
+}
+
+.operation-button{
+    color: #ed8114;
+    
+}
+
+/* Equal Button */
+#content > form > table > tbody > tr:nth-child(5) > td:nth-child(4) > input{
+    background-color: #1459ed;
+    color: white;
+}
+
+#content > form > table > tbody > tr:nth-child(5) > td:nth-child(4) > input:hover {
+    background-color: #2d70ff;
+    color: white;
+}
+
+
+/* Responsive adjustments for font size based on screen width */
+@media (max-width: 480px) {
+  .textview {
+    font-size: 18px; /* Smaller font size for extra-small screens */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .textview {
+    font-size: 20px; /* Medium font size for small to medium screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .textview {
+    font-size: 24px; /* Standard font size for large screens */
+  }
+}
